@@ -1,0 +1,41 @@
+// Navigation Styles here
+
+
+#navBar{
+    position: absolute;
+    height: 90px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    .flexy();
+    .liner();
+
+    #navContainer{
+        position: absolute;
+        height: 90px;
+        width: 100vw;
+        border: solid pink 1px;
+        padding-left: 40px;
+        padding-right: 40px;
+        .flexy(space-between);
+        .resMax(1480px);
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            h1 {
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+
+        nav {
+            .flexy(space-between);
+            .res(18%);
+            .resMax(344px);
+            @media screen and (max-width: 768px){
+                width: 100%;
+                .flexy(space-between)
+            }
+        }
+    }
+}

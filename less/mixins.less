@@ -1,0 +1,24 @@
+// Mixins in here
+
+.liner(){border-bottom: solid lime 2px;}
+
+.flexy(@justify: center, @align: center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.res(@width:auto, @height:auto){
+    width: @width;
+    height: @height;
+}
+.resMax(@maxwidth:auto, @maxheight:auto){
+    max-width: @maxwidth;
+    max-height: @maxheight;
+}
+/*
+.signUpHover(){
+    @hover ~ "&:hover{";
+    @bracket ~ "}";
+        @hover color: rgba(0, 0, 0, 0); border: solid #008080; @bracket ;
+}
+*/

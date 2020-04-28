@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Posthere - An automated subreddit finder</title>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <div id= "navBar">
+    <div id= "navContainer">
+      <h1 id="funTitle" >logo here</h1>
+      <nav>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Contact</a>
+      </nav>
+    </div>
+  </div>
+  <div id="pageContainer">
+    <div class="container home" id="page">
+      <header>
+        <div class="headText">
+          <h2>reddit is a BIG place.</h2>
+          <p>Let's find a home for your post.</p>
+          <a href="">POST HERE</a>      
+        </div>
+        
+      </header>
+      <section class="content-section">
+        <div class="imgTxt text-content">
+          <h2>Title 1</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A labore quaerat assumenda? Vel voluptatem repellat animi sint in veritatis inventore odit perspiciatis accusamus, ad quia? Ipsam nihil amet voluptate quidem.</p> 
+        </div>
+        <div class="imgTxt img-content">
+        </div>
+      </section>
+      
+      </section>
+      <section class="content-pick">
+
+        <div class="destination">
+          <h4>Title 3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad praesentium cumque natus iure commodi molestiae. Vitae doloremque magnam expedita earum recusandae nihil illo, eius tempora reprehenderit aut non dolorem debitis.</p>
+          <button data-modal-target="#modal" class="btn">Sign Me Up!</button>
+        </div>
+        <div class="destination">
+          <h4>Title 4</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae, a quod asperiores, assumenda sapiente veritatis temporibus, et vel esse at fuga amet. Tempora voluptate necessitatibus, molestias provident hic velit!</p>
+          <button data-modal-target="#modal" class="btn">Sign Me Up!</button>
+        </div>
+        <div class="destination">
+          <h4>Title 5</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente neque omnis deleniti harum ipsum maxime similique ab reprehenderit officia eos, quasi quos expedita, maiores illo nisi laborum ducimus esse sunt.</p>
+          <button data-modal-target="#modal" class="btn">Sign Me Up!</button>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <button data-close-button="" class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div id="forms">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Name" id="fname" name="fname"><br>
+                  <input type="text" placeholder="Email" id="lname" name="lname"><br>
+                  <input type="text" placeholder="Phone Number" id="lname" name="lname"><br>
+                  <select id="country"  name="country">
+                    <option value="" disabled selected>Area</option>
+                    <option value="AM">America</option>
+                    <option value="ME">'Merica</option>
+                    <option value="usa">USA</option>
+                  </select><br>
+                  <select id="package"  name="Package">
+                    <option value="" disabled selected>Package</option>
+                    <option value="AM">This</option>
+                    <option value="ME">Doesn't</option>
+                    <option value="usa">Work :)</option>
+                  </select><br>                 
+                  <button class="close-button">SUBMIT</button>
+                </form>
+              </div>
+              </form>
+            </div>
+          </div>
+          <div id="overlay"></div>
+        </div>
+      </section>
+    </div><!-- page -->
+  </div><!-- pageContainer -->
+  <footer class="footer">
+    <p>&copy; Super Really Official Copyright 2020</p>
+  </footer>
+
+</body>
+</html>
