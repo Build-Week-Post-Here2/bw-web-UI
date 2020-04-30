@@ -1,23 +1,18 @@
 *, *::before, *::after {box-sizing: border-box;}
 
-html {
-  font-size: 62.5%;
-}
+html { font-size: 62.5%; }
 
 html, body {
+  .bColor(@obsidian);
   font-family: 'Roboto', sans-serif;
-  background-color: @obsidian;
 }
-
 
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto', sans-serif;
   color: @secondary;
 }
 
-h1 {
-  font-size: 4rem;
-}
+h1 { font-size: 4rem; }
 
 h2 {
   font-size: 4rem;
@@ -25,15 +20,9 @@ h2 {
   padding-bottom: 40px;
 }
 
-h3 {
-  font-size: 2.25rem;
-  padding-bottom: 10px;
-}
+h3 { font-size: 2.25rem; padding-bottom: 10px;}
 
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-}
+h4 { font-size: 2.5rem; padding-bottom: 10px;}
 
 p, a {
   line-height: 1.5;
@@ -48,37 +37,18 @@ a {
   color: @secondary;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+img { max-width: 100%; height: auto;}
 
-#page{
-  .flexy();
-  flex-direction: column;
-  //.res(90%,100%);
-  //.resMax(800px);
-  //@media screen and (max-width: 1000px) { .res(90%,100%); }
-  
-}
+#page{.flexy(); .flexD();}
 
-#pageContainer{
-  .flexy(center center);
-  flex-direction: column;
-  width: 100%;
-}
-/*.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  border: solid green;}*/
+#pageContainer{.flexy(); .flexD(); .res(100%);}
 
-  
+//////////////////////////////////////////////////////////////
+//////////////////////// scroll bar //////////////////////////
+//////////////////////////////////////////////////////////////
+
  //width 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 0px;
-}
+::-webkit-scrollbar {.res(10px, 0px);}
 //Track 
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);

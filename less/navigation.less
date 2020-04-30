@@ -1,59 +1,49 @@
-// Navigation Styles here
-
+#logo-Top-left{ @media screen and (max-width: 768px) {font-size: 3.2rem;}}
 
 #navBar{
+    .flexy();
+    .res(auto, 90px);
     position: absolute;
-    height: 90px;
     left: 0%;
     right: 0%;
     top: 0px;
-    .flexy();
 
     #navContainer{
+        .flexy(space-between);
+        .res(100vw, 90px);
+        .resMax(1480px);
         position: absolute;
-        height: 90px;
-        width: 100vw;
         padding-left: 40px;
         padding-right: 40px;
-        .flexy(space-between);
-        .resMax(1480px);
-
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-            h1 {
-                margin-top: auto;
-                margin-bottom: auto;
-            }
-        }
+        @media screen and (max-width: 768px) { .flexD();}
 
         nav {
             .flexy(space-between);
             .res(200px);
             .resMax(200px);
-            min-width: 200px;
+            .resMin(200px);
             margin: 1%;
             transition: 300ms;
-            @media screen and (max-width: 768px){
-                width: 100%;
-                .flexy(space-between)
-            }
+            @media screen and (max-width: 768px){ .res(100%); .flexy(space-between); }
             &:hover{
-                .solid{
-                color: @white;
-                background: none;;
-                }
-            }
-            a{
-                .solid{
-                    color: @primary;
-                    background: none;;
-                }
-                transition: 300ms;
-                &:hover{
-                  color:@primary;
-                  .solid{
-                    color: @primary;
-                    background: none;;
+                .solid{ 
+                    color: @white; 
+                    background: none; 
+                        }
+                    }
+
+                    a{
+                        .solid{ 
+                        color: @primary; 
+                        background: none; 
+                        transition: 300ms;
+                    }
+                    &:hover{
+                        color:@primary;
+
+                        .solid{ 
+                        color: @primary; 
+                        background: none; 
                     }
                 }
             }
