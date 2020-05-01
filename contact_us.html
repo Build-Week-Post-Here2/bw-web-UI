@@ -6,19 +6,32 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Posthere - An automated subreddit finder</title>
   <script src="https://kit.fontawesome.com/53c957ed22.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
+  <script>
+    window.onload = function() {
+    lax.setup() // init
+
+    const updateLax = () => {
+      lax.update(window.scrollY)
+      window.requestAnimationFrame(updateLax)
+    }
+
+    window.requestAnimationFrame(updateLax)
+  }
+  </script>
 </head>
 
 
 
 <body>
 
-
+  
   <div id= "navBar">
     <div id= "navContainer">
-      <h1 id="logo-top-left">posthere</h1>
+      <h1 id="logo-top-left"><mark class="stone">post</mark>here</h1>
       <nav>
         <a href="/index.html">Home</a>
         <a href="/about_us.html">About</a>
@@ -32,9 +45,9 @@
     <div class="container home" id="page">
 
 
-      <header>
+      <header id="contactHeader">
         <div class="headText">
-          <p>Our contact info can be found below! :)</p>   
+          <p id="cText" class="lax" >Our contact info can be found below! :)</p>   
         </div>
       </header>
 

@@ -6,9 +6,10 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Posthere - An automated subreddit finder</title>
   <script src="https://kit.fontawesome.com/53c957ed22.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
 </head>
 
 
@@ -18,30 +19,37 @@
 
   <div id= "navBar">
     <div id= "navContainer">
-      <h1 id="logo-top-left">posthere</h1>
-      <nav>
+      <h1 id="logo-top-left">post<mark class="solid">h<mark class="stone"></mark>ere</mark></h1>
+      <nav id = "link-box">
         <a href="/index.html"><mark class="solid">Home</mark></a>
         <a href="/about_us.html">About</a>
         <a href="/contact_us.html">Contact</a>
       </nav>
     </div>
+    <a href="https://bw-unit3-front-end.now.sh/login" id = "sign-up">Signup!</a>
   </div>
 
+  <img id="s0" class="svg0 headGraphic lax" data-lax-translate-y="0 0, 200vh 220vh" src="svg/svg0.svg"/>
+  <img id="s1" class="svg1 headGraphic lax" data-lax-translate-y="0 0, 200vh 210vh" src="svg/svg1.svg"/>
+  <img id="s2" class="svg2 headGraphic lax" data-lax-translate-y="0 0, 200vh 200vh" src="svg/svg2.svg"/>
+  <img id="s22" class="svg22 headGraphic lax" data-lax-translate-y="0 0, 200vh 200vh" src="svg/svg7.svg"/>
+  <img id="s3" class="svg3 headGraphic lax" data-lax-translate-y="0 0, 200vh 165vh" src="svg/svg3.svg"/>
+  <img id="s4" class="svg4 headGraphic lax" data-lax-translate-y="0 0, 150vh 60vh" src="svg/svg4.svg"/>
+  <img id="s5" class="svg5 headGraphic lax" data-lax-translate-y="0 0, 200vh 100vh"  src="svg/foreground.svg"/>
+  
 
   <div id="pageContainer">
     <div class="container home" id="page">
 
-
       <header>
-        <div class="headText">
-          <h2>reddit is a BIG place.</h2>
+        <div class="headText lax" data-lax-translate-y="0 0, 400vh 300vh "data-lax-translate-x="1 .5, 1000vh -30vh">
+          <h2 >reddit is a<br><mark class="solid">BIG</mark>  place.</h2>
           <p>Let's find a home for your post.</p>
-          <a href="">POST HERE</a>      
         </div>
       </header>
 
       
-      <section class="content-section">
+      <section id="homeGap" class="content-section">
         <div class="content-block" id="card-content">
           <div class="headBox">
             <h2 class="section-head">How It Works</h2>
@@ -50,22 +58,22 @@
             <div class="card">
               <h3>Step 1</h3>
               <div class="card-line"></div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A labore quaerat assumenda? Vel voluptatem repellat animi sint in veritatis inventore odit perspiciatis accusamus, ad quia? Ipsam nihil amet voluptate quidem.</p>   
+              <p> First you will need to sign up so we can get this show on the road!</p>   
             </div>
             <div class="card">
               <h3>Step 2</h3>
               <div class="card-line"></div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A labore quaerat assumenda? Vel voluptatem repellat animi sint in veritatis inventore odit perspiciatis accusamus, ad quia? Ipsam nihil amet voluptate quidem.</p>   
+              <p>Next just type up a post of whatever is on your mind. Sheep, urban apparel, maybe a little quantum mechanics.</p>   
             </div>
             <div class="card">
               <h3>Step 3</h3>
               <div class="card-line"></div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A labore quaerat assumenda? Vel voluptatem repellat animi sint in veritatis inventore odit perspiciatis accusamus, ad quia? Ipsam nihil amet voluptate quidem.</p>   
+              <p>Sit back and relax while we do all the heavy lifting! You deserve it.</p>   
             </div>
             <div class="card">
               <h3>Step 4</h3>
               <div class="card-line"></div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A labore quaerat assumenda? Vel voluptatem repellat animi sint in veritatis inventore odit perspiciatis accusamus, ad quia? Ipsam nihil amet voluptate quidem.</p>   
+              <p>Hands up! 🙌 We've found a subreddit with your name on it. A home for your post!</p>   
             </div>
           </div>
         </div>
@@ -96,9 +104,10 @@
   </div>
 
 
-  <footer class="footer">
+  <footer class="footer" id="home-footer">
     <p>&copy; Super Really Official Copyright 2020</p>
   </footer>
+
 
 
 </body>
@@ -106,3 +115,15 @@
 
 
 </html>
+<script>
+  window.onload = function() {
+    lax.setup() // init
+
+    const updateLax = () => {
+      lax.update(window.scrollY)
+      window.requestAnimationFrame(updateLax)
+    }
+
+    window.requestAnimationFrame(updateLax)
+  }
+</script>

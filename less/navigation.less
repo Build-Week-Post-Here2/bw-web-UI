@@ -1,5 +1,26 @@
 #logo-Top-left{ @media screen and (max-width: 768px) {font-size: 3.2rem;}}
 
+#sign-up{
+    width: 100px;
+    border-radius: 10px;
+    color: @coal;
+    border: solid @coal;
+    text-justify: center;
+    text-align: center;
+    z-index: 999999;
+    transition: 200ms;
+    &:hover{
+        color: white;
+        .bColor(@coal);
+    }
+    @media screen and (max-width: 768px) {
+        transform: translateY(90px);
+    }
+}
+
+.stone{ color: @primary; background: none};
+.solid{ color: @gray; background: none};
+
 #navBar{
     .flexy();
     .res(auto, 90px);
@@ -16,11 +37,12 @@
         padding-left: 40px;
         padding-right: 40px;
         @media screen and (max-width: 768px) { .flexD();}
+        
 
         nav {
             .flexy(space-between);
             .res(200px);
-            .resMax(200px);
+            .resMax(500px);
             .resMin(200px);
             margin: 1%;
             transition: 300ms;
