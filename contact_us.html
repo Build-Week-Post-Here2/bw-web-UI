@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Posthere - An automated subreddit finder</title>
+  <script src="https://kit.fontawesome.com/53c957ed22.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
+  <script>
+    window.onload = function() {
+    lax.setup() // init
+
+    const updateLax = () => {
+      lax.update(window.scrollY)
+      window.requestAnimationFrame(updateLax)
+    }
+
+    window.requestAnimationFrame(updateLax)
+  }
+  </script>
+</head>
+
+
+
+<body>
+
+  
+  <div id= "navBar">
+    <div id= "navContainer">
+      <h1 id="logo-top-left"><mark class="stone">post</mark>here</h1>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about_us.html">About</a>
+        <a href="/contact_us.html"><mark class="solid">Contact</mark></a>
+      </nav>
+    </div>
+  </div>
+
+
+  <div id="pageContainer">
+    <div class="container home" id="page">
+
+
+      <header id="contactHeader">
+        <div class="headText">
+          <p id="cText" class="lax" >Our contact info can be found below! :)</p>   
+        </div>
+      </header>
+
+      <section class="content-section content-section2">
+        <div class="content-block" id="icon-content">
+          <div class="icon-box"><a href="https://www.instagram.com/">
+            <i class="fab fa-instagram-square">
+              <div class="whiteBlock"></div>
+            </i>
+          </a></div>
+          <div class="icon-box"><a href="https://twitter.com/">
+            <i class="fab fa-twitter-square">
+              <div class="whiteBlock"></div>
+            </i>
+          </a></div>
+          <div class="icon-box"><a href="https://www.github.com/">
+            <i class="fab fa-github-square">
+              <div class="whiteBlock"></div>
+            </i>
+          </a></div>
+        </div>
+      </section>
+
+
+    </div><!-- page -->
+  </div><!-- pageContainer -->
+
+
+  <footer class="footer">
+    <p>&copy; Super Really Official Copyright 2020</p>
+  </footer>
+
+
+</body>
+
+
+
+</html>

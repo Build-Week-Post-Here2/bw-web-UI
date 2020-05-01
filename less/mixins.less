@@ -1,0 +1,43 @@
+.find(@color: red){
+    border: solid @color 1px;
+}
+.flexy(@justify: center, @align: center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.flexD(@direction: column, @wrap: nowrap){
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+}
+.res(@width:auto, @height:auto){
+    width: @width;
+    height: @height;
+}
+.resMax(@maxwidth: auto, @maxheight: auto){
+    max-width: @maxwidth;
+    max-height: @maxheight;
+}
+.resMin(@minwidth: none, @minheight: none){
+    min-width: @minwidth;
+    min-height: @minheight;
+}
+.mVert(@top: unset, @bottom: unset){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+.mHor(@left: unset, @right: unset){
+    margin-left: @left;
+    margin-right: @right;
+}
+.bColor(@color: @primary){
+    background-color: @color;
+}
+
+/*
+.signUpHover(){
+    @hover ~ "&:hover{";
+    @bracket ~ "}";
+        @hover color: rgba(0, 0, 0, 0); border: solid #008080; @bracket ;
+}
+*/

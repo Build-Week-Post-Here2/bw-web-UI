@@ -1,0 +1,124 @@
+
+.headGraphic{
+    z-index: -12;
+    position: absolute;
+
+    overflow: hidden;
+    top:-30vh;
+    left: 0;
+    .res(unset, @display);
+    .resMin(@ratio);
+    max-width: 1000%;
+}
+.svg1{
+    top:-30vh;
+    z-index: -8;
+}
+.svg2{
+    z-index: -6;
+    top:-25vh;
+
+}
+.svg22{
+    z-index: -7;
+    top:-25vh;
+
+}
+.svg3{
+    z-index: -4;
+    top: -20vh;
+}
+.svg4{
+    z-index: -2;
+    top:0vh;
+}
+.svg5{
+    z-index: 10;
+    top:25vh;
+}
+
+
+header{
+    .flexy(flex-end, center);
+    .res(100%, 100vh);
+
+    .headText{
+        .flexy(flex-end);
+        .res(90%, 50%);
+        .flexD();
+        z-index: -4;
+
+        p{ 
+            font-size: 300%;
+            color: @white;
+            text-align: end;
+            transform: translateX(10vw) translateY(5vh);
+            text-shadow: 0px 0px 0px 12px rgba(0,0 , 0,1);
+            margin-top: -1vh;
+            margin-right: -19vh;
+            @media screen and (max-width: 1200px){
+                margin-left: -30vh;
+                margin-bottom: 5vh;
+            }
+            @media screen and (max-width: 780px){
+                margin-bottom: 25vh;
+                margin-left: 1;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 2rem;
+            }
+        }
+
+        h2{ 
+            padding: 0;
+            text-justify: newspaper
+            .mVert(20vw, 7vw);
+            text-align: end;
+            line-height: 10vw;
+            font-size: 8vw;
+            color: @white;
+            text-shadow: 100;
+            font-weight: 1000;
+            letter-spacing: .75rem;
+            margin-left: 20vw;
+            margin-bottom: -1vw;
+            text-shadow: 0 .1vh 0 #CCCCCC, 0 .2vh 0 #c9c9c9, 0 .3vh 0 #bbb, 0 .4vh 0 #b9b9b9, 0 .5vh 0 #aaa, 0 .6vh .1vh rgba(0,0,0,.1), 0 0 .5vh rgba(0,0,0,.1), 0 .1vh .3vh rgba(0,0,0,.3), 0 .4vh .5vh rgba(0,0,0,.2), 0 .5vh 1vh rgba(0,0,0,.25), 0 1vh 1vh rgba(0,0,0,.2), 0 2vh 2vh rgba(0,0,0,.15);
+            @media screen and (max-width: 1200px){
+                font-size: 15vw;
+                margin-bottom: 0vh;
+                margin-left: -4vh;
+            }
+            @media screen and (max-width: 780px){
+                margin-bottom: -3vh;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 4rem;
+            }
+        }
+        .solid{
+            font-size: 12vw;
+            background: none;
+            color: @primary;
+            text-shadow: 0 .1vh 0 rgb(206, 161, 103), 0 .2vh 0 #c5902c, 0 .3vh 0 rgb(187, 124, 53), 0 .4vh 0 #b87036, 0 .5vh 0 rgb(170, 97, 54), 0 .6vh .1vh rgba(0,0,0,.1), 0 0 .5vh rgba(0,0,0,.1), 0 .1vh .3vh rgba(0,0,0,.3), 0 .4vh .5vh rgba(0,0,0,.2), 0 .5vh 1vh rgba(0,0,0,.25), 0 1vh 1vh rgba(0,0,0,.2), 0 2vh 2vh rgba(0,0,0,.15);            
+            @media screen and (max-width: 1200px){
+                font-size: 20vw;
+                line-height: 20vw;
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////
+/////////////////////////// contact ////////////////////////////
+////////////////////////////////////////////////////////////////
+
+#contactHeader{
+    .bColor(@obsidian);
+    z-index: -1;
+    .headText{
+        #cText{
+            color: white;
+        }
+    }
+    
+}
